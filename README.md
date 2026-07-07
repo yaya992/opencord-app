@@ -1,46 +1,26 @@
-```md
 # OpenCord
 
-<p align="center">
-  <img src="src-tauri/icons/icon.png" width="128" />
-</p>
+## Client desktop officiel OpenCord
 
-<h3 align="center">
-Client desktop officiel OpenCord
-</h3>
-
-<p align="center">
-Une application rapide, légère et optimisée pour accéder à OpenCord depuis Windows, macOS et Linux.
-</p>
+Une application rapide, légère et optimisée pour utiliser OpenCord depuis Windows, macOS et Linux.
 
 ---
 
 ## ✨ Présentation
 
-OpenCord est une application desktop basée sur **Tauri** permettant d'utiliser OpenCord dans une interface native.
+OpenCord est une application desktop basée sur **Tauri** permettant d'accéder à OpenCord avec une interface native.
 
-L'objectif est de fournir une meilleure expérience qu'un simple navigateur :
+Objectifs :
 
-- 🚀 démarrage rapide
-- 🖥️ application dédiée
-- 🔒 connexion sécurisée au site officiel
-- ⚡ meilleure intégration système
-- 🎮 préparation pour les fonctionnalités avancées (partage d'écran, optimisation GPU, etc.)
+- 🚀 Démarrage rapide
+- 🖥️ Application dédiée
+- 🔒 Connexion sécurisée au service officiel
+- ⚡ Meilleure intégration avec le système
+- 🎮 Préparation pour les futures fonctions avancées (partage d'écran, optimisation GPU, etc.)
 
 ---
 
-## 📦 Téléchargement
-
-Les versions officielles sont disponibles ici :
-
-➡️ **GitHub Releases :**
-```
-
-https://github.com/VOTRE_COMPTE/OpenCord/releases
-
-```
-
-Versions disponibles :
+Formats disponibles :
 
 | Système | Format |
 |---|---|
@@ -50,37 +30,31 @@ Versions disponibles :
 
 ---
 
-## 🌐 Site officiel
+## 🌐 Liens officiels
 
 Site :
-```
 
 https://opencord.fr
 
-```
-
 Connexion :
-```
 
 https://opencord.fr/auth/login
 
-````
-
 ---
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies
 
 OpenCord utilise :
 
-- [Tauri](https://tauri.app/) — application desktop légère
-- Node.js — environnement JavaScript
-- Vite — build frontend
-- Tailwind CSS — interface utilisateur
-- Rust — couche native Tauri
+- **Tauri** — application desktop légère
+- **Rust** — couche native
+- **Node.js** — environnement JavaScript
+- **Vite** — système de build
+- **Tailwind CSS** — interface utilisateur
 
 ---
 
-## 🏗️ Compilation locale
+## 🏗️ Installation pour développeurs
 
 ### Prérequis
 
@@ -91,7 +65,7 @@ Installer :
 - Cargo
 - Les dépendances Tauri
 
-Puis :
+Installation :
 
 ```bash
 npm install
@@ -121,7 +95,7 @@ OpenCord/
 │
 ├── src-tauri/
 │   ├── Configuration Tauri
-│   ├── Code natif
+│   ├── Code natif Rust
 │   └── Icônes application
 │
 └── .github/
@@ -131,19 +105,21 @@ OpenCord/
 
 ---
 
-## 🔄 Build automatique
+## 🔄 Compilation automatique
 
-Les builds sont générés automatiquement avec GitHub Actions :
+Les versions sont générées automatiquement avec GitHub Actions.
+
+Processus :
 
 ```
-Push du code
-      ↓
+Modification du code
+        ↓
 GitHub Actions
-      ↓
-Windows Build
-macOS Build
-Linux Build
-      ↓
+        ↓
+Build Windows
+Build macOS
+Build Linux
+        ↓
 GitHub Release
 ```
 
@@ -153,36 +129,27 @@ GitHub Release
 
 OpenCord :
 
-✅ est open source
-✅ utilise uniquement le domaine officiel OpenCord
-✅ ne collecte aucune donnée personnelle inutile
-✅ ne contient aucun logiciel tiers caché
+* ✅ est open source
+* ✅ utilise uniquement les services officiels OpenCord
+* ✅ ne contient aucun logiciel tiers caché
+* ✅ permet la vérification du code source
 
-Le code source complet est disponible pour permettre à chacun de vérifier le fonctionnement de l'application.
+Le code est public afin de garantir la transparence du projet.
 
 ---
 
 ## 🐛 Signaler un problème
 
-Si vous trouvez un bug ou un problème :
+Pour signaler un bug :
 
 1. Ouvrez une issue GitHub
-2. Décrivez le problème
-3. Ajoutez votre système d'exploitation et la version utilisée
+2. Indiquez votre système d'exploitation
+3. Indiquez la version d'OpenCord utilisée
+4. Ajoutez une description du problème
 
 ---
 
-## 📜 Licence
-
-Ce projet est distribué sous licence :
-
-```
-À définir
-```
-
----
-
-## ❤️ Contribution
+## 🤝 Contribution
 
 Les contributions sont les bienvenues.
 
@@ -190,9 +157,14 @@ Vous pouvez :
 
 * proposer des améliorations ;
 * signaler des bugs ;
-* contribuer au code.
+* participer au développement.
 
-Merci de participer au développement d'OpenCord !
+---
 
-```
-```
+## 📜 Licence
+
+Licence : à définir.
+
+---
+
+Merci de contribuer au développement d'OpenCord !
