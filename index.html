@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./src/assets/tailwindcss.js"></script>
+
+    <link rel="stylesheet" href="./src/assets/icons.css" />
+
+    <title>OpenCord</title>
+
+    <script>
+        setTimeout(() => {
+            window.location.replace("http://192.168.1.10:5858/auth/login");
+        }, 1500);
+    </script>
+</head>
+
+<body class="bg-[#313338] text-white flex items-center justify-center h-screen overflow-hidden">
+
+    <!-- Background effects -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute w-96 h-96 bg-[#5865F2]/20 rounded-full blur-3xl -top-20 -left-20"></div>
+        <div class="absolute w-96 h-96 bg-[#7289DA]/10 rounded-full blur-3xl -bottom-20 -right-20"></div>
+    </div>
+
+
+    <!-- Loading Card -->
+    <div class="relative w-[420px] bg-[#2b2d31]/90 backdrop-blur-xl rounded-2xl p-10 shadow-2xl border border-white/5 flex flex-col items-center">
+
+
+        <!-- Logo -->
+        <div class="w-28 h-28 rounded-[32px] bg-[#5865F2] flex items-center justify-center shadow-xl shadow-[#5865F2]/40 mb-7">
+
+            <span class="material-symbols-rounded text-[70px]">
+                forum
+            </span>
+
+        </div>
+
+
+        <!-- Title -->
+        <h1 class="text-5xl font-bold tracking-tight">
+            OpenCord
+        </h1>
+
+
+        <p class="text-[#b5bac1] mt-3 text-lg">
+            Connexion à votre espace...
+        </p>
+
+
+        <!-- Progress -->
+        <div class="w-full mt-8">
+
+            <div class="h-2 bg-[#1e1f22] rounded-full overflow-hidden">
+
+                <div class="h-full w-full bg-[#5865F2] animate-pulse rounded-full"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Status -->
+        <div class="flex items-center gap-3 mt-6 text-[#949ba4]">
+
+            <span class="material-symbols-rounded animate-spin">
+                progress_activity
+            </span>
+
+            <span>
+                Chargement de l'application...
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
