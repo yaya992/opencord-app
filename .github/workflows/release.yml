@@ -2,8 +2,8 @@ name: Build OpenCord
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
 
 permissions:
   contents: write
@@ -49,15 +49,18 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
 
-      - name: Install npm dependencies
+      - name: Install dependencies
         run: npm install
 
 
-      - name: Build Tauri
+      - name: Build and Release
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         with:
+          tagName: ${{ github.ref_name }}
+          releaseName: "OpenCord ${{ github.ref_name }}"
+          releaseBody: "Nouvelle version OpenCord"
           releaseDraft: false
           prerelease: false
